@@ -27,7 +27,7 @@
  $legenda = ["Rio de janeiro", "Japão", "Chapada", "Diamantina"];
  $fotos = ["rio.jpg", "jalapao.jpg", "diamantina.jpg"];
 
- for($i = 0; $i <3; $i++ ){
+ for($i = 0; $i <3; $i++ ):
 ?>
 
 <div class="mb-3">
@@ -40,20 +40,19 @@
             <p>Americana</p>
         </div>
     </div>
+    <img src = "img/<?php echo $fotos[$i]; ?>" class="img-fluid">
+    <div class="row">
+        <div class="col-12">
+        <i class=" bi bi-heart "></i>
+        <i class=" bi bi-chat "></i>
+        </div>
+        <div class="col-12">
+        <p><?php echo $legenda[$i];?></p>
+        </div>
+    </div>
 </div>
-
-<div class="mb-3">
-    <img src = "img/ <?php echo $fotos[$i]; ?>" class="img-fluid">
-    <p><?php echo $legenda [$i]; ?></p>
-</div>
-
-
-<div class= "mb-3">
-texto
-</div>
-
 <?php
- }
+endfor;
 ?>
 
     </div>
