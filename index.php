@@ -11,7 +11,51 @@
 </head>
 <body>
     <div class="container-fluid g-0">
-        <h1><i class="bi bi-heart"></i> Funciona</h1>
+        <?php
+
+// for($i = 0; $i < 3; $i++){
+// $legenda = ["Rio de janeiro", "Japão", "Chapada", "Diamantina"];
+// $fotos = ["rio.jpg", "jalapao.jpg", "diamantina.jpg"];
+
+// echo "<img src= 'img/" . $fotos[$i] . "'class ='img-fluid'>";
+// echo "<br>";
+// echo $legenda [$i];
+// }
+
+
+
+ $legenda = ["Rio de janeiro", "Japão", "Chapada", "Diamantina"];
+ $fotos = ["rio.jpg", "jalapao.jpg", "diamantina.jpg"];
+
+ for($i = 0; $i <3; $i++ ){
+?>
+
+<div class="mb-3">
+    <div class ="row">
+        <div class="col-2">
+            <img src="img/avatar.jpg" class="img-fluid" style="border-radius: 50px;">
+        </div>
+        <div class="col g-0 ">
+            <h6 class="mb-0 mt-1"> Toninho Starko</h6>
+            <p>Americana</p>
+        </div>
+    </div>
+</div>
+
+<div class="mb-3">
+    <img src = "img/ <?php echo $fotos[$i]; ?>" class="img-fluid">
+    <p><?php echo $legenda [$i]; ?></p>
+</div>
+
+
+<div class= "mb-3">
+texto
+</div>
+
+<?php
+ }
+?>
+
     </div>
 </body>
 </html>
